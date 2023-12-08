@@ -1,0 +1,38 @@
+
+
+.slider-row{
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px 10px;
+  position: relative;
+  &:after{
+    content: "";
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(270deg, white, transparent);
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media (max-width: 576px) {
+      width: 30px;
+    }
+  }
+  &:before{
+    content: "";
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(90deg, white, transparent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    @media (max-width: 576px) {
+      width: 30px;
+    }
+  }
+  .slick-arrow{
+    display: none !important;
+  }
+
+}

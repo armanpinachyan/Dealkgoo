@@ -1,0 +1,27 @@
+
+
+.bookmarks{
+  &-head{
+    margin-top: 0;
+  }
+  &-head-box{
+    margin: 46px 0;
+    display: flex;
+    justify-content: space-between;
+    .delete{
+      height: 40px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 24px;
+      padding-right: 16px;
+      font-size: 16px;
+      color: #212121;
+      font-weight: 500;
+    }
+  }
+
+
+}

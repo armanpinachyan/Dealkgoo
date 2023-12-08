@@ -1,0 +1,56 @@
+
+.popular-cases-hover{
+    height: 350px;
+  .sub-title{
+    width: 150px;
+    transition: .3s;
+    opacity: 1;
+    overflow: hidden;
+  }
+  .hover-bloc{
+    height: 0;
+    opacity: 0;
+    z-index: 1000;
+    transition: .2s linear;
+    .hover-name{
+      font-size: 16px;
+      color: #cfd1dd;
+      font-weight: 300;
+    }
+    .hover-sub-title{
+      font-size: 16px;
+      color: #212121;
+      font-weight: 600;
+      margin-bottom: 7px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      span{
+        color: #cfd1dd;
+        margin-left: 5px;
+      }
+    }
+  }
+  &:hover{
+    .hover-bloc {
+      background: #fff;
+      height: 130px;
+      opacity: 1;
+      margin-bottom: 15px;
+      margin-top: -17px;
+    }
+    .ratting-bloc{
+      border-radius: 25px;
+      padding: 0 20px 10px 20px;
+      position: relative;
+      z-index: 1000;
+      background: #fff;
+    }
+    .sub-title{
+      width: 0;
+      transition: .3s;
+      opacity: 0;
+    }
+  }
+
+}

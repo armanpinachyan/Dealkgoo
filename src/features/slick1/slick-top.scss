@@ -1,0 +1,115 @@
+
+.slick-top-items{
+  height: 140px;
+  background-position: center 12%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  @media (max-width: 768px) {
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (max-width: 475px) {
+    height: 250px;
+  }
+  .box1{
+    display: flex;
+    align-items: center;
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    .title-box{
+      .title{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: -6px;
+        @media (max-width: 576px) {
+          font-size: 20px;
+        }
+      }
+      span{
+        color: #feb348;
+        font-size: 14px;
+        @media (max-width: 576px) {
+          font-size: 12px;
+        }
+      }
+
+    }
+    .name{
+      margin-left: 40px;
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      img{
+        margin-right: 10px;
+      }
+      h3{
+        margin-top: -3px;
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: -6px;
+        @media (max-width: 576px) {
+          font-size: 18px;
+        }
+      }
+      span{
+        font-size: 16px;
+        color: #ffffff;
+        @media (max-width: 576px) {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .box2{
+    display: flex;
+    align-items: center;
+    @media (max-width: 475px) {
+      flex-direction: column;
+    }
+    .data{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-right: 20px;
+      @media (max-width: 475px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      &-box{
+        width: 40px;
+        height: 40px;
+        border-radius: 15px;
+        background-color: #02060d;
+        border: 1px solid #feb348;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10px;
+        &:last-child{
+          margin-right: 0;
+        }
+        .number{
+          font-size: 18px;
+          color: #feb348;
+          font-weight: bold;
+          margin-bottom: -6px;
+        }
+        span{
+          font-size: 12px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

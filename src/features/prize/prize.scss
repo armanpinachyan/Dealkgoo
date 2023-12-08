@@ -1,0 +1,121 @@
+
+.prize{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  &-box{
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 101px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: #fc274e;
+    padding: 10px;
+    transition: .3s;
+    overflow: hidden;
+    &:last-child{
+      margin-right: 0;
+    }
+    .text-box{
+      width: 0;
+      transition: .3s;
+      opacity: 0;
+      .name{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        transition: .3s;
+        span{
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: bold;
+          white-space: nowrap;
+        }
+      }
+      .title{
+        opacity: 0.502;
+        font-size: 12px;
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: -4px;
+        white-space: nowrap;
+      }
+      .sub-title{
+        font-size: 14px;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+    }
+    &.active{
+      width: 268px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px 10px 21px;
+      & .text-box{
+        width: 140px;
+        overflow: hidden;
+        opacity: 1;
+      }
+      & .image-box .image{
+        opacity: .5;
+        transition: .3s;
+      }
+      & .image-box .image-name{
+        opacity: 0;
+      }
+    }
+    &:hover{
+      width: 268px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px 10px 21px;
+      & .text-box{
+        width: 140px;
+        opacity: 1;
+      }
+      & .image-box .image{
+        opacity: .5;
+        transition: .3s;
+      }
+      & .image-box .image-name{
+        opacity: 0;
+      }
+
+
+    }
+    .image-box{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      img{
+        position: relative;
+      }
+      .image{
+        opacity: .3;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(16deg, rgba(255, 0, 0, 0) 2%, rgba(255,255,255,1) 81%, rgba(0,0,0,0) 555%);
+        &-name{
+          position: absolute;
+          top: 80%;
+          left: 2px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 14px;
+          color: #ffffff;
+          width: 80px;
+        }
+      }
+    }
+  }
+}

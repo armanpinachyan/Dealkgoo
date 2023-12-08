@@ -1,0 +1,18 @@
+
+
+.profile-s-sc{
+  @media (max-width: 992px) {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+}
+
+.new-image-2{
+  margin-right: 21px;
+  @media (max-width: 576px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

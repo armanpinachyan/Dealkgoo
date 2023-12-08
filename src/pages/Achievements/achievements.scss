@@ -1,0 +1,94 @@
+
+
+
+.achievements{
+
+  &-heading{
+    font-size: 30px;
+    color: #212121;
+    font-weight: bold;
+    margin-top: 43px;
+  }
+
+  &-row{
+
+    &-box{
+      border-radius: 25px;
+      background-color: #ffffff;
+      width: 100%;
+      height: 100%;
+      padding: 30px 0;
+      text-align: center;
+      .icon{
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+        background-color: #f7f7fb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        @media (max-width: 576px) {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      .texts{
+        margin-top: 30px;
+        div{
+          font-size: 18px;
+          color: #212121;
+          font-weight: bold;
+          text-align: center;
+          @media (max-width: 576px) {
+           font-size: 16px;
+          }
+        }
+        span{
+          font-size: 16px;
+          color: #cfd1dd;
+          font-weight: 300;
+          text-align: center;
+          @media (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .percent{
+        margin: 39px auto 0 auto;
+        width: 140px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #f7f8fb;
+        position: relative;
+        .blue{
+          width: 61px;
+          height: 7px;
+          border-radius: 4px;
+          background-color: #2763fe;
+        }
+      }
+
+      .button{
+        margin-top: 18px;
+        .btn-bl{
+          border-radius: 20px;
+          filter: drop-shadow(0px 5px 12.5px rgba(39,99,254,0.3));
+          background-color: #2763fe;
+          padding: 11px 38px;
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+    }
+
+
+  }
+
+}
