@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Tab, Tabs } from '@mui/material';
 import { RandomKey } from '../../utils/helpers';
-import './ default-tabs.scss';
+import './default-tabs.scss';
 import Select from '../def-select/def-select';
 import Icons from '../icons/icons';
 import apps from '../../assets/icons/apps.png';
